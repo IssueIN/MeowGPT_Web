@@ -1,0 +1,32 @@
+body {
+  display: flex;
+  justify-content: center; 
+  align-items: center;     
+  min-height: 100vh;       
+  margin: 0;             
+}
+
+h2 {
+  font-size: 28px;
+}
+
+.content-wrapper {
+  width: 40%;
+  transform: translateY(-30%); 
+}
+
+.emotion {
+  padding-top: 15px;
+}
+
+button {
+  font-size: 16px;
+  margin: 8px;
+  padding: 8px;
+  cursor: pointer;
+  border: none;
+  background-color: hsl(158, 95%, 15%);
+  border-radius: 4px;
+  color: white;
+}
+

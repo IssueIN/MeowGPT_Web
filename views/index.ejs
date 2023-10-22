@@ -1,0 +1,29 @@
+<div class="content-wrapper">
+  <h2>MeowGPT</h2>
+
+  <form action="/upload" method="POST" enctype="multipart/form-data">
+    <div>
+      <label>Upload your MEOW</label>
+      <input type="file" name="fileField"/>
+    </div>
+    <button type="submit" id="upload-button">Upload</button>
+  </form>
+
+  <div class="emotion"><%= emotion ? emotion : ''  %></div>
+  
+  <div class="audio"><span>Communicate With Your Cat!</span></div>
+  <div class="audio-buttons">
+    <button onclick="playAudio('./public/audio/noise_reduced_generatedB.wav')">Happy</button>
+    <button onclick="playAudio('./public/audio/noise_reduced_generatedF.wav')">Angry</button>
+    <button onclick="playAudio('./public/audio/noise_reduced_generatedI.wav')">Sad</button>
+  </div>
+</div>
+
+
+
+<script>
+  function playAudio(audioFile) {
+    var audio = new Audio(audioFile);
+    audio.play();
+  }
+</script>
